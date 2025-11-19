@@ -1,16 +1,21 @@
-# React + Vite
+# Roster Recall 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Roster Recall is an interactive sports trivia game built with React. Users select a professional sports team and race against the clock to name as many current players on the roster as possible before time runs out.
 
-Currently, two official plugins are available:
+## Tech Stack
+* **Frontend:** React, Vite
+* **Styling:** CSS Modules / Standard CSS
+* **API:** TheSportsDB (for fetching teams and live rosters)
+* **Backend:** Firebase Auth & Firestore 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Key Features 
+* **League & Team Selection:** Dynamic fetching of teams based on selected league.
+* **Game Logic:** 90-second countdown timer.
+* **Roster Validation:** Real-time checking of user input against API data.
+* **Live Scoring:** Visual feedback for correct answers.
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Pages
+* **Home Page**
+* **Game Page**
+* **History Page**
+* **Log in Page**
