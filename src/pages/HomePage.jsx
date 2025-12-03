@@ -25,8 +25,7 @@ function HomePage() {
   return (
     <div className="container">
       <div className="league-selector">
-        {/* Buttons to switch leagues */}
-        {['NBA', 'NFL', 'MLB'].map(l => (
+        {['NBA', 'NFL', 'MLB'].map(l => ( // Buttons to switch leagues
           <button 
             key={l} 
             className={`league-btn ${league === l ? 'active' : ''}`}
@@ -38,8 +37,8 @@ function HomePage() {
       </div>
 
       <div className="team-grid">
-        {teams.map(team => (
-          <TeamCard key={team.idTeam} team={team} onClick={handleTeamClick} />
+        {teams.map(team => ( // Grab teams from API and dsiplay them
+          <TeamCard key={team.idTeam} team={team} onClick={handleTeamClick} /> 
         ))}
       </div>
     </div>
